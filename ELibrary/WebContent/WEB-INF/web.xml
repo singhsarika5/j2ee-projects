@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ELibrary</display-name>
+  <welcome-file-list>
+    <welcome-file>libraryhome.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  			<servlet-name>AdminLogin</servlet-name>
+  			<servlet-class>com.myprojects.servlet.AdminLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>AdminLogin</servlet-name>	
+  		 <url-pattern>/adminlogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  			<servlet-name>LogoutAdmin</servlet-name>
+  			<servlet-class>com.myprojects.servlet.LogoutAdmin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>LogoutAdmin</servlet-name>	
+  		 <url-pattern>/logoutadmin</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  			<servlet-name>LibrarianLogin</servlet-name>
+  			<servlet-class>com.myprojects.servlet.LibrarianLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>LibrarianLogin</servlet-name>	
+  		 <url-pattern>/librarianlogin</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  			<servlet-name>LogoutLibrarian</servlet-name>
+  			<servlet-class>com.myprojects.servlet.LogoutLibrarian</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>LogoutLibrarian</servlet-name>	
+  		 <url-pattern>/logoutlibrarian</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  			<servlet-name>AddNewLibrarian</servlet-name>
+  			<servlet-class>com.myprojects.servlet.AddNewLibrarian</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>AddNewLibrarian</servlet-name>	
+  		 <url-pattern>/addlibrarian</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  			<servlet-name>ViewLibrarian</servlet-name>
+  			<servlet-class>com.myprojects.servlet.ViewRegisteredLibrarian</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>ViewLibrarian</servlet-name>	
+  		 <url-pattern>/viewlibrarian</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  			<servlet-name>EditLibrarianForm</servlet-name>
+  			<servlet-class>com.myprojects.servlet.EditLibrarianForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>EditLibrarianForm</servlet-name>	
+  		 <url-pattern>/editlibrarianform</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+  			<servlet-name>EditLibrarian</servlet-name>
+  			<servlet-class>com.myprojects.servlet.EditLibrarian</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>EditLibrarian</servlet-name>	
+  		 <url-pattern>/editlibrarian</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  			<servlet-name>DeleteLibrarian</servlet-name>
+  			<servlet-class>com.myprojects.servlet.DeleteLibrarian</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>DeleteLibrarian</servlet-name>	
+  		 <url-pattern>/deletelibrarian</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  			<servlet-name>AddBookForm</servlet-name>
+  			<servlet-class>com.myprojects.servlet.AddBookForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>AddBookForm</servlet-name>	
+  		 <url-pattern>/addbook</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  			<servlet-name>ViewRegisteredBooks</servlet-name>
+  			<servlet-class>com.myprojects.servlet.ViewRegisteredBooks</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>ViewRegisteredBooks</servlet-name>	
+  		 <url-pattern>/viewbook</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  			<servlet-name>ViewIssuedBooks</servlet-name>
+  			<servlet-class>com.myprojects.servlet.ViewIssuedBooks</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>ViewIssuedBooks</servlet-name>	
+  		 <url-pattern>/viewissuedbook</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  			<servlet-name>IssueBookForm</servlet-name>
+  			<servlet-class>com.myprojects.servlet.IssueBookForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>IssueBookForm</servlet-name>	
+  		 <url-pattern>/issuebook</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  			<servlet-name>ReturnBook</servlet-name>
+  			<servlet-class>com.myprojects.servlet.ReturnBook</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>ReturnBook</servlet-name>	
+  		 <url-pattern>/returnbook</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
